@@ -18,17 +18,18 @@ def process_data(data):
     sqrt_data = [math.sqrt(x) if x > 0 else None for x in sorted_data]   # https://docs.python.org/3/library/math.html#math.sqrt
     return sorted_data, sqrt_data
 
-def safe_division(numbers):
+def safe_division(numbers, letters):
     """Randomly selects two numbers from the list and divides them."""
     results = []
     for _ in range(len(numbers) // 2):    # Perform division multiple times but not for all elements.
         a, b = random.sample(numbers, 2)    # https://docs.python.org/3/library/random.html#random.sample
+        letter = random.choice(letters)     # https://docs.python.org/3/library/random.html#random.choice
         try:
             results.append(f'{a} / {b} = {a / b:.2f}')
         except ZeroDivisionError:
             results.append(f'{a} / {b} = Division by zero')  # https://docs.python.org/3/library/exceptions.html#ZeroDivisionError
         except TypeError:
-            results.append(f'{a} / {b} = Invalid data type')   # https://docs.python.org/3/library/exceptions.html#TypeError
+            results.append(f'{a} / {letter} = Invalid data type')   # https://docs.python.org/3/library/exceptions.html#TypeError
     return results
 
 def main():
