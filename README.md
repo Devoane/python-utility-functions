@@ -10,7 +10,7 @@ The project can be used as a basis for futher learning and developing programmin
 ## ⚙ Functionalities
 
 ### 🔹 1. **Generating random data**
-- Creates a random list of integers between 1 and 100
+- Creates a random list of integers between 0 and 100
 - Creates a random list of letters from A-Z
 - Each run generates new values
 
