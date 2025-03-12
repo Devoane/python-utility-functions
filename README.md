@@ -52,7 +52,7 @@ The project can be used as a basis for futher learning and developing programmin
 
 ## 🚀 Launch
 1. Download the repository:
-  `git clone https://github.com/python-utility-functions.git`
+  `git clone https://github.com/Devoane/python-utility-functions.git)`
 2. Go to directory:
   `cd python-utility-functions`
 3. Run the program:
