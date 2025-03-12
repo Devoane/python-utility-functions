@@ -30,7 +30,6 @@ The project can be used as a basis for futher learning and developing programmin
 
 ### 🔹 5. **Code execution time measurement**
 - `time.time()` measures the start and end time of the operation
-- `time.sleep(1)` simulates a longer operation
 - The result is given in seconds
 
 ## 🛠 Python Modules
