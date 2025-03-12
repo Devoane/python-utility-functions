@@ -40,6 +40,7 @@ The project can be used as a basis for futher learning and developing programmin
     - [`math.sqrt(x)`](https://docs.python.org/3/library/math.html#math.sqrt) – calculates the square root of `x`
   - `random` – [Documentation](https://docs.python.org/3/library/random.html)
     - [`random.randint(a, b)`](https://docs.python.org/3/library/random.html#random.randint) – randomizes an integer from the range `[a, b]`
+    - [`random.sample(population, k)`](https://docs.python.org/3/library/random.html#random.sample) – Selects `k` random unique elements from a list 
   - `time` – [Documentation](https://docs.python.org/3/library/time.html)
     - [`time.time()`](https://docs.python.org/3/library/time.html#time.time) – returns time in seconds since UNIX epoch
     - [`time.sleep(sec)`](https://docs.python.org/3/library/time.html#time.sleep) – stops program execution for the specified number of seconds
