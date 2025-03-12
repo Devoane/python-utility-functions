@@ -28,7 +28,7 @@ def safe_division(numbers):
         except ZeroDivisionError:
             results.append(f'{a} / {b} = Division by zero')  # https://docs.python.org/3/library/exceptions.html#ZeroDivisionError
         except TypeError:
-            results.append(f'{a} / {b} = Invalid data type')   # https://docs.python.org/3/library/exceptions.html#TypeError
+            return None   # https://docs.python.org/3/library/exceptions.html#TypeError
     return results
 
 def main():
