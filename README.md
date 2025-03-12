@@ -43,10 +43,11 @@ The project can be used as a basis for futher learning and developing programmin
     - [`random.sample(population, k)`](https://docs.python.org/3/library/random.html#random.sample) – Selects `k` random unique elements from a list 
   - `time` – [Documentation](https://docs.python.org/3/library/time.html)
     - [`time.time()`](https://docs.python.org/3/library/time.html#time.time) – returns time in seconds since UNIX epoch
-    - [`time.sleep(sec)`](https://docs.python.org/3/library/time.html#time.sleep) – stops program execution for the specified number of seconds
 - **Python built-in functions:**
   - [`zip()`](https://docs.python.org/3/library/functions.html#zip) – combines elements from several lists into pairs
   - [`sorted()`](https://docs.python.org/3/library/functions.html#sorted) – returns a sorted list
+  - [`chr()`](https://docs.python.org/3/library/functions.html#chr) – converts an integer to its corresponding Unicode character
+  - [`isinstance()`](https://docs.python.org/3/library/functions.html#isinstance) – checks if an object is an instance of a specific type or class
 - **Exception handling:**
   - [`ZeroDivisionError`](https://docs.python.org/3/library/exceptions.html#ZeroDivisionError) – exception when dividing by zero
   - [`TypeError`](https://docs.python.org/3/library/exceptions.html#TypeError) – exception for invalid data type
