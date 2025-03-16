@@ -64,7 +64,7 @@ def main():
     print('Division Result (zero division):', division_result[0])
 
     # Test case for TypeError
-    type_error_data = ['10', 20, 5]      # List containing string
+    type_error_data = ['10', 20, 5]      # List containing string.
     print('Testing TypeError handling:')
     division_result = safe_division(type_error_data)
     print('Division Result (type error):', division_result[0])
