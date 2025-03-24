@@ -3,7 +3,7 @@ from datetime import datetime   # https://docs.python.org/3/library/datetime.htm
 import math
 
 
-def is_valid_email(email):
+def is_valid_email(email: str) -> bool:
     """Checks if the given email is valid."""
     pattern = r'^[\w\.\+-]+@[\w\.-]+\.[a-zA-Z]{2,}$'  # Regular expression pattern for email
     return bool(re.match(pattern, email))
