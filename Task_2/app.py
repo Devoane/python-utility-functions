@@ -32,6 +32,6 @@ def convert_date_format(date_str):
         raise ValueError("Invalid date format")
 
     
-def is_palidrome(text):
+def is_palindrome(text: str) -> bool:
     """Cheks if a given string is a palindrome"""
     return text == text[::-1]       # Reverse the string and compare.
