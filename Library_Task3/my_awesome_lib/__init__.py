@@ -10,3 +10,4 @@ __author__ = 'Devoan'
 # Import modules into the package namespace
 from . import text_processing
 from . import stats_analysis
+from . import file_utils
