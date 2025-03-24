@@ -42,8 +42,8 @@ The library includes:
 #### **median(data: List[float]) -> float**
 - Calculates the median of a list of numbers.
 
-#### **(data: List[float]) -> float**
-- Calculates the mode of a list of numbers.
+#### **standard_deviation(numbers: List[Union[int, float]]) -> float**
+- Calculates the standard deviation of a list of numbers.
 
 ## 🛠 Python Modules
 - **Python 3** – [Official Documentation](https://docs.python.org/3/)
