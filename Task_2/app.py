@@ -4,8 +4,8 @@ import math
 
 
 def is_valid_email(email):
-    """Cheks if the given email is valid"""
-    pattern = r'^[\w\.-]+@[\w\.-]+\.\+$' # Basic regex from eamil validation
+    """Checks if the given email is valid."""
+    pattern = r'^[\w\.-]+@[\w\.-]+\.[a-zA-Z]{2,}$'  # Improved regex
     return bool(re.match(pattern, email))
 
 def calculate_area(shape, a, b=None):
@@ -26,10 +26,11 @@ def filter_and_sort_list(numbers):
 def convert_date_format(date_str):
     """Converts date from DD-MM-YYYY to YYYY/MM/DD format."""
     try:
-        date_obj = datetime.strptime(date_str, "%d-%m-%Y")  # Convert string to datetime object.
-        return date_obj.strftime("%Y/%n/%d")  # Convert back to desired format.
+        date_obj = datetime.strptime(date_str, "%d-%m-%Y")  # Convert string to datetime object
+        return date_obj.strftime("%Y/%m/%d").strip()  # Ensure no unwanted characters
     except ValueError:
-        raise ValueError('Invalid date format.')
+        raise ValueError("Invalid date format")
+
     
 def is_palidrome(text):
     """Cheks if a given string is a palindrome"""
