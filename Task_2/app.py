@@ -5,7 +5,7 @@ import math
 
 def is_valid_email(email):
     """Checks if the given email is valid."""
-    pattern = r'^[\w\.-]+@[\w\.-]+\.[a-zA-Z]{2,}$'  # Improved regex
+    pattern = r'^[\w\.\+-]+@[\w\.-]+\.[a-zA-Z]{2,}$'  # Regular expression pattern for email
     return bool(re.match(pattern, email))
 
 def calculate_area(shape, a, b=None):
@@ -34,4 +34,4 @@ def convert_date_format(date_str):
     
 def is_palindrome(text: str) -> bool:
     """Cheks if a given string is a palindrome"""
-    return text == text[::-1]       # Reverse the string and compare.
+    return text.lower() == text.lower()[::-1]
