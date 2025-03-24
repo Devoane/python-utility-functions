@@ -6,7 +6,7 @@ import math
 def is_valid_email(email):
     """Cheks if the given email is valid"""
     pattern = r'^[\w\.-]+@[\w\.-]+\.\+$' # Basic regex from eamil validation
-    return bool(re.math(pattern, email))
+    return bool(re.match(pattern, email))
 
 def calculate_area(shape, a, b=None):
     """Calculates the area of the given shape"""
