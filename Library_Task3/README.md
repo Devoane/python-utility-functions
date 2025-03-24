@@ -42,7 +42,7 @@ The library includes:
 #### **median(data: List[float]) -> float**
 - Calculates the median of a list of numbers.
 
-#### **mode(data: List[float]) -> float**
+#### **(data: List[float]) -> float**
 - Calculates the mode of a list of numbers.
 
 ## 🛠 Python Modules
@@ -99,3 +99,46 @@ print(clean_text)  # Output: "This is a sample text It includes punctuation and 
 # Find most common words
 common_words = most_common_words(text, n=3)
 print(common_words)  # Output: [('is', 2), ('a', 1), ('sample', 1)]
+```
+
+### Example 2: File Handling.
+
+```python
+from Library_Task3.file_utils import read_text_file, read_csv_to_dict, save_to_json
+
+# Read text file
+text = read_text_file("example.txt")
+print(text)
+
+# Read CSV file to dictionary
+csv_data = read_csv_to_dict("data.csv")
+print(csv_data)
+
+# Save data to JSON
+data = {"name": "John", "age": 30}
+save_to_json(data, "output.json")
+```
+
+### Example 3: Statistic Analysis.
+
+```python
+from Library_Task3.stats_analysis import mean, median, standard_deviation
+
+data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Calculate mean
+mean_value = mean(data)
+print(mean_value)  # Output: 5.5
+
+# Calculate median
+median_value = median(data)
+print(median_value)  # Output: 5.5
+
+# Calculate standard deviation
+std_dev = standard_deviation(data)
+print(round(std_dev, 2))  # Output: 2.87
+```
+
+## 💌 License.
+
+This project is licensed under the MIT License - see the LICENSE file for details.
