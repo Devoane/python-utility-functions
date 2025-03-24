@@ -1,5 +1,5 @@
 import pytest
-from my_lib.data_utils import convert_dicts_to_json, parse_json
+from my_awesome_lib.data_utils import convert_dicts_to_json, parse_json
 
 class TestDataUtils:
     """Test suite for data_utils module."""
