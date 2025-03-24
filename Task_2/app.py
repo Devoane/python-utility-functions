@@ -23,7 +23,7 @@ def filter_and_sort_list(numbers):
     """Filters even numbers and returns then sorted"""
     return sorted([num for num in numbers if num % 2 == 0])
 
-def conbvert_date_format(date_str):
+def convert_date_format(date_str):
     """Converts date from DD-MM-YYYY to YYYY/MM/DD format."""
     try:
         date_obj = datetime.strptime(date_str, "%d-%m-%Y")  # Convert string to datetime object.
