@@ -34,7 +34,7 @@ Tests are implemented in `test_app.py` using the `unittest` framework.
   `git clone https://github.com/Devoane/python-utility-functions.git)`
 2. Go to directory:
   `cd python-utility-functions/test_driven_development(Task2)`
-3. Run all unit test using `unittest`.
+3. Run all unit test using `unittest`:
   `python -m unittest test_app.py`
 
 ## 🛠 Python Modules
