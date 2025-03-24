@@ -1,32 +1,43 @@
-"""
-Module: math_tools
-Provides basic mathematical operations (factorial, greatest common divisor).
-"""
-
-import math
-from typing import Tuple  # Importing Tuple for return types
-# https://docs.python.org/3/library/typing.html#typing.Tuple
+def add_numbers(a: float, b: float) -> float:
+    """Add two numbers with type checking.
+    
+    Args:
+        a: First operand (float or int)
+        b: Second operand (float or int)
+    
+    Returns:
+        Sum of a and b as float
+        
+    Raises:
+        TypeError: If inputs are not numbers
+        
+    Example:
+        >>> add_numbers(2, 3.5)
+        5.5
+    """
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("Both arguments must be numbers")
+    return float(a + b)
 
 def factorial(n: int) -> int:
+    """Calculate factorial with input validation.
+    
+    Args:
+        n: Non-negative integer
+        
+    Returns:
+        Factorial of n
+        
+    Raises:
+        ValueError: If n is negative
+        TypeError: If n is not integer
+        
+    Example:
+        >>> factorial(5)
+        120
     """
-    Computes the factorial of a given number.
-
-    :param n: Non-negative integer.
-    :return: Factorial of n.
-    :rtype: int
-    :raises ValueError: If n is negative.
-    """
+    if not isinstance(n, int):
+        raise TypeError("Input must be integer")
     if n < 0:
-        raise ValueError("Factorial is not defined for negative numbers")
-    return math.factorial(n)
-
-def gcd(a: int, b: int) -> int:
-    """
-    Computes the greatest common divisor (GCD) of two integers.
-
-    :param a: First integer.
-    :param b: Second integer.
-    :return: GCD of a and b.
-    :rtype: int
-    """
-    return math.gcd(a, b)
+        raise ValueError("Factorial undefined for negative numbers")
+    return 1 if n <= 1 else n * factorial(n - 1)
