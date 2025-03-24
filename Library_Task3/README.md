@@ -68,7 +68,7 @@ The library includes:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/YourUsername/Library_Task3.git
+    git clone https://github.com/Devoane/python-utility-functions.git
     ```
 2. Navigate to the project directory:
     ```bash
