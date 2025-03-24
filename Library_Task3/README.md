@@ -141,4 +141,5 @@ print(round(std_dev, 2))  # Output: 2.87
 
 ## 💌 License.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE)
+ file for details.
