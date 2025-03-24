@@ -15,7 +15,8 @@ class TestUltilityFunctions(unittest.TestCase):
         self.assertEqual(calculate_area("circle", 5), 78.54)
         self.assertEqual(calculate_area("square", 4), 16)
         self.assertEqual(calculate_area("rectangle", 3, 6), 18)
-        self.assertEqual(ValueError, calculate_area("triangle", 3))
+        with self.assertRaises(ValueError):
+            calculate_area("triange", 3)
 
 
     def test_filter_and_sort_list(self):
