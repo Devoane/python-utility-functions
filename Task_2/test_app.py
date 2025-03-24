@@ -6,7 +6,7 @@ class TestUltilityFunctions(unittest.TestCase):
     def test_is_valid_email(self):
         """Tests valid validation function."""
         self.assertTrue(is_valid_email('test@example.com'))
-        self.assertTrue(is_valid_email('invalid-email'))
+        self.assertFalse(is_valid_email('invalid-email'))
         self.assertFalse(is_valid_email('missing@dotcom'))
 
 
