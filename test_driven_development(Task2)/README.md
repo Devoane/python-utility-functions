@@ -35,7 +35,7 @@ Tests are implemented in `test_app.py` using the `unittest` framework.
 2. Go to directory:
   `cd python-utility-functions/test_driven_development(Task2)`
 3. Run all unit test using `unittest`.
-  `python -m unittest test_app.py'
+  `python -m unittest test_app.py`
 
 ## 🛠 Python Modules
 - **Python 3** – [Official Documentation](https://docs.python.org/3/)
