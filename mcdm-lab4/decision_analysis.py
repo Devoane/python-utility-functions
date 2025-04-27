@@ -4,9 +4,9 @@ from pymcdm.weights import entropy_weights as entropy
 
 # Decision Matrix Definition: Rows represent alternatives (laptops), columns represent criteria
 decision_matrix = np.array([
-    [4000, 8, 2500, 1.8],  # Laptop 1
-    [4500, 10, 2300, 2.0],  # Laptop 2
-    [4200, 7, 2700, 1.6]    # Laptop 3
+    [4000, 8, 2500, 1.8],  # Laptop A
+    [4500, 10, 2300, 2.0],  # Laptop B
+    [4200, 7, 2700, 1.6]    # Laptop C
 ])
 
 # Weights for each criterion (must sum to 1)
